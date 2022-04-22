@@ -1,0 +1,21 @@
+.NotFound {
+  max-width: max-content;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+.NotFound h1 {
+  font-size: 3rem;
+  font-family: var(--family-poppins);
+  font-weight: 600;
+  color: var(--color-2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.NotFound p {
+  fill-opacity: var(--family-poppins);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--colorMain);
+}

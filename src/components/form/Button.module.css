@@ -1,0 +1,25 @@
+.ButtonSubmit {
+  font-family: var(--family-poppins);
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: 0.015rem;
+  text-transform: uppercase;
+  color: var(--color-6);
+  background: var(--color-5);
+  border-radius: 0.25rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.75rem;
+  transition: 0.2s;
+}
+
+.ButtonSubmit:disabled{
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.ButtonSubmit:hover,
+.ButtonSubmit:focus {
+  opacity: 0.8;
+}

@@ -1,0 +1,24 @@
+.userInformation {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.userInformationText {
+  font-family: var(--family-poppins);
+  font-weight: 600;
+  color: var(--color-2);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.userInformationText::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 4px;
+  background: var(--color-5);
+}
+

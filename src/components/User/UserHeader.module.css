@@ -1,0 +1,131 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.headerTitle {
+  font-family: var(--family-poppins);
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-2);
+  position: relative;
+}
+
+.headerTitle::after {
+  content: '';
+  display: block;
+  width: 3.75rem;
+  height: 3px;
+  background: var(--color-5);
+  position: absolute;
+  bottom: 0;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.headerNav a,
+.headerNav button {
+  border: none;
+  background: var(--color-3);
+  flex: 1;
+  border-radius: 5px;
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.headerNav a:global(.active)  {
+  background: var(--color-5);
+}
+
+.headerNav a:hover,
+.headerNav button:hover {
+  background: var(--color-5);
+}
+
+.mobileMenu {
+  background: #eee;
+  border: .2rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.mobileMenu::after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  box-shadow: 0 6px currentColor, 0 -6px currentColor;
+  transition: 0.2s;
+}
+
+/* response */
+@keyframes show-menu {
+ from {
+   opacity: 0;
+   transform: translate3d(-40px,0,0);
+ }
+ to {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+}
+
+.headerNavResponse {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: var(--color-3);
+  padding: 1.25rem;
+  border-radius: 4px;
+  display: grid;
+  gap: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  transform: translate3d(-30px,0,0);
+}
+
+.headerNavResponseActive {
+  opacity: 1;
+  pointer-events: initial;
+  transform: translate3d(0,0,0);
+}
+
+
+.headerNavResponse a,
+.headerNavResponse button {
+  border: none;
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-2);
+  font-weight: 600;
+  font-family: var(--family-poppins);
+  font-size: 1rem;
+  background: transparent;
+}
+
+ 
+
+

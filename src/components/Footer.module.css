@@ -1,0 +1,14 @@
+.footerBg {
+  background: var(--colorMain);
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer p {
+  font-family: var(--family-roboto);
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-3);
+}

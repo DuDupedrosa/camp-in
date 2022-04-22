@@ -1,0 +1,42 @@
+.label {
+  font-family: var(--family-poppins);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-7);
+  margin-bottom: 0.375rem;
+  display: block;
+}
+
+.input {
+  font-family: var(--family-roboto);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--color-7);
+  padding: 0.875rem 1.875rem;
+  width: 100%;
+  border: 2px solid var(--color-8);
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  background: transparent;
+  transition: 0.2s;
+}
+
+.input:focus, 
+.input:hover {
+  outline: none;
+  border-color: var(--color-5);
+  box-shadow: 0px 0px 0px 2px var(--color-9);
+}
+
+.inputBox {
+  position: relative;
+}
+
+.detailInput {
+  position: absolute;
+  bottom: 10px;
+  left: 6px;
+  z-index: 100;
+}

@@ -1,0 +1,33 @@
+.headerBg {
+  background: var(--colorMain);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 78.75rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  box-sizing: border-box;
+}
+
+.headerLinks  {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.headerLinks a {
+  font-family: var(--family-poppins);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-3);
+  transition: 0.2s;
+}
+
+.headerLinks a:hover {
+  color: var(--color-5);
+}
+

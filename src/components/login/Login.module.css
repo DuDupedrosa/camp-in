@@ -1,0 +1,53 @@
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  gap: 2rem;
+  padding-top: 2rem;
+  background: var(--colorMain);
+}
+
+.login::before {
+  content: '';
+  display: block;
+  background: url(../../assets/side-image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.loginForm {
+  grid-row: 1;
+  grid-column: 1;
+  max-width: 40rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  background: var(--color-2);
+  padding: 2rem;
+  border-radius: 0.25rem;
+  align-self: center;
+  justify-self: center; 
+}
+
+@media(min-width: 116.25rem) {
+  .loginForm {
+    min-width: 37.5rem; 
+  }
+} 
+
+@media(max-width: 50rem) {
+  .login::before {
+    display: none;
+  }
+
+  .login {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .loginForm {
+    grid-row: initial;
+    grid-column: initial;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}

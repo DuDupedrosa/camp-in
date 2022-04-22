@@ -1,0 +1,41 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home img {
+  height: 100%;
+}
+
+.homeTitle {
+  font-family: var(--family-poppins);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-2);
+  text-transform: capitalize;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.homeTitle::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--color-5);
+  position: absolute;
+  bottom: 0;
+}
+
+@media(max-width: 28.75rem) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .homeTitle {
+    font-size: 2rem;
+  }
+}

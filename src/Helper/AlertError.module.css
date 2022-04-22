@@ -1,0 +1,35 @@
+@keyframes show-erro {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px,0,0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.error {
+  font-family: var(--family-poppins);
+  font-size: 0.75rem;
+  color: var(--color-5);
+  background: var(--colorMain);
+  padding: 0.4rem;
+  border-radius: 0.25rem;
+  max-width: max-content;
+  animation: show-erro 0.3s forwards;
+  position: relative;
+}
+
+.error::before {
+  content: '';
+  display: block;
+  width: 0.125rem;
+  height: 0.125rem;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--colorMain);
+  position: absolute;
+  top: -10px;
+  left: 1;
+}
